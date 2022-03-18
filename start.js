@@ -105,15 +105,33 @@ function fizzBuzz () {
     } else {
         output.push(i);
     }
-    console.log(output);
 }
 
 while (i <= 100) {
     fizzBuzz();
 }
 
-//////////////////////    ///////////////////////////
+console.log(output);
 
+//////////////////////  Iterations  ///////////////////////////
+
+/*
+Fibonacci Challange
+*/
+function fibozGen (extension) {
+    var result = [];
+    for (var x = 0;x < extension;x++) {
+        if (result.length > 1) {
+            result.push(result[result.length - 1] + result[result.length - 2]);
+        } else {
+            result.push(x);
+        }
+    }
+    return result;
+}
+
+console.log(fibozGen(10));
+  
 
 
 
