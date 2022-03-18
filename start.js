@@ -68,7 +68,12 @@ var ucon = ["Libermann", "Edson", "Andre", "Henrique", "JoJo", "Gustavo", "Bruno
 console.log(ucon[0]);
 
 var member = prompt("What's your name?");
-
+/*
+array.includes(x):
+    Searches for x member inside the array in the entire array.
+array.includes(x, y):
+    Searches for x member inside the array beggining by the y index until the array's end;
+*/
 if (ucon.includes(member)) {
     alert("You are a member of UCON project, welcome!");
 } else {
@@ -77,9 +82,9 @@ if (ucon.includes(member)) {
 
 /*
 Fizz buzz problem
-Multiples of 3 = "Fizz"
-Multiples of 5 = "Buzz"
-Multiples of 3 and 5 = "FizzBuzz"
+    Multiples of 3 = "Fizz"
+    Multiples of 5 = "Buzz"
+    Multiples of 3 and 5 = "FizzBuzz"
 */
 var output = [];
 i = 0;
@@ -107,7 +112,7 @@ while (i <= 100) {
     fizzBuzz();
 }
 
-
+//////////////////////    ///////////////////////////
 
 
 
